@@ -1,0 +1,31 @@
+[9:42:42] Open Application
+[9:42:51] EmployeeID:"1" login
+[9:42:51] EmployeeID:"1" Open form main menu
+[9:43:03] EmployeeID:"1" Open form sale
+[9:43:10] EmployeeID:"1" KeyDown ProductID:"1" Price:"15" Quantity:"1" Amount:"15.00"
+[9:43:14] EmployeeID:"1" Click Clear Data
+[9:43:15] EmployeeID:"1" KeyDown ProductID:"1" Price:"15" Quantity:"1" Amount:"15.00"
+[9:43:20] EmployeeID:"1" Cash KeyDown:Cash->Toltal All->Change:20->15->5
+[9:43:34] EmployeeID:"1" Save Sale Click  Amount : "15.00" Cash : "20" Change : "5.00" SaleID:"2016"Successfully
+[9:43:38] EmployeeID:"1" Open form main menu
+[9:43:40] EmployeeID:"1" Open form sale detail
+[9:43:49] EmployeeID:"1" Cell click saleID:"13"
+[9:43:50] EmployeeID:"1" Cell click saleID:"1002"
+[9:43:51] EmployeeID:"1" Cell click saleID:"1003"
+[9:43:52] EmployeeID:"1" Cell click saleID:"2002"
+[9:43:53] EmployeeID:"1" Cell click saleID:"2003"
+[9:43:53] EmployeeID:"1" Cell click saleID:"2004"
+[9:43:54] EmployeeID:"1" Cell click saleID:"2005"
+[9:43:57] EmployeeID:"1" Cell click saleID:"2014"
+[9:44:02] EmployeeID:"1" Cell click saleID:"2016"
+[9:44:03] EmployeeID:"1" Cell click saleID:"2015"
+[9:44:04] EmployeeID:"1" Cell click saleID:"2014"
+[9:44:05] EmployeeID:"1" Cell click saleID:"2013"
+[9:44:05] EmployeeID:"1" Cell click saleID:"2012"
+[9:44:06] EmployeeID:"1" Cell click saleID:"2011"
+[9:44:09] EmployeeID:"1" Open form main menu
+[9:44:11] EmployeeID:"1" Open form sata employee
+[9:44:16] EmployeeID:"1" Open form main menu
+[9:44:18] EmployeeID:"1" Open form employee menu
+[9:44:18] EmployeeID:"1" Open form show employee
+[9:44:23] EmployeeID:"1" Open form sale detail

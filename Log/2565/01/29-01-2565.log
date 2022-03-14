@@ -1,0 +1,155 @@
+[21:39:16] Open Application
+[21:43:00] Open Application
+[21:43:08] Exit Application
+[21:43:39] Open Application
+[21:43:51] Exit Application
+[21:46:03] Open Application
+[21:46:08] EmployeeID:"1" login
+[21:46:08] EmployeeID:"1" Open form main menu
+[21:46:14] EmployeeID:"1" Open form sale
+[21:46:22] EmployeeID:"1" Open form main menu
+[21:46:24] EmployeeID:"1" Open form stock
+[21:46:52] EmployeeID:"1" Click new load product list
+[21:46:53] EmployeeID:"1" Click add productID:"New"
+[21:46:56] EmployeeID:"1" Click cancel
+[21:46:59] EmployeeID:"1" Cell Click ProductID:"2"
+[21:47:01] EmployeeID:"1" Cell Click ProductID:"1"
+[21:47:01] EmployeeID:"1" Cell Click ProductID:"4"
+[21:47:02] EmployeeID:"1" Cell Click ProductID:"9300807032428"
+[21:47:03] EmployeeID:"1" Cell Click ProductID:"ee"
+[21:47:04] EmployeeID:"1" Cell Click ProductID:"eee"
+[21:47:04] EmployeeID:"1" Cell Click ProductID:"333"
+[21:47:05] EmployeeID:"1" Click new load product list
+[21:47:05] EmployeeID:"1" Click new load product list
+[21:47:06] EmployeeID:"1" Click new load product list
+[21:47:06] EmployeeID:"1" Click new load product list
+[21:47:06] EmployeeID:"1" Click new load product list
+[21:47:06] EmployeeID:"1" Click new load product list
+[21:47:10] EmployeeID:"1" Open form main menu
+[21:47:12] EmployeeID:"1" Open form stock
+[21:47:22] EmployeeID:"1" Exit Application
+[21:49:43] Open Application
+[21:49:48] EmployeeID:"1" login
+[21:49:48] EmployeeID:"1" Open form main menu
+[21:49:49] EmployeeID:"1" Open form sale
+[21:49:51] EmployeeID:"1" Open form main menu
+[21:49:52] EmployeeID:"1" Open form stock
+[21:49:53] EmployeeID:"1" Open form main menu
+[21:49:53] EmployeeID:"1" Open form sata employee
+[21:49:54] EmployeeID:"1" Open form main menu
+[21:49:55] EmployeeID:"1" Open form employee menu
+[21:49:55] EmployeeID:"1" Open form show employee
+[21:49:57] EmployeeID:"1" Open form employee menu
+[21:49:57] EmployeeID:"1" Open form show employee
+[21:50:03] EmployeeID:"1" Open form employee menu
+[21:50:03] EmployeeID:"1" Open form show employee
+[21:50:05] EmployeeID:"1" Open form sale detail
+[21:50:17] Open Application
+[21:50:23] EmployeeID:"1" login
+[21:50:23] EmployeeID:"1" Open form main menu
+[21:50:24] EmployeeID:"1" Open form sale detail
+[21:50:41] EmployeeID:"1" Cell click saleID:"1002"
+[21:50:42] EmployeeID:"1" Cell click saleID:"1003"
+[21:50:43] EmployeeID:"1" Cell click saleID:"2005"
+[21:50:45] EmployeeID:"1" Cell click saleID:"2004"
+[21:50:46] EmployeeID:"1" Cell click saleID:"1003"
+[21:50:50] EmployeeID:"1" Open form main menu
+[21:50:52] EmployeeID:"1" Open form add employee
+[21:51:00] EmployeeID:"1" Exit Application
+[21:51:54] Open Application
+[21:51:58] EmployeeID:"1" login
+[21:51:58] EmployeeID:"1" Open form main menu
+[21:52:00] EmployeeID:"1" Open form sale detail
+[21:52:01] EmployeeID:"1" Cell click saleID:"1002"
+[21:52:02] EmployeeID:"1" Cell click saleID:"1003"
+[21:52:04] EmployeeID:"1" Cell click saleID:"2013"
+[21:52:13] EmployeeID:"1" Cell click saleID:"13"
+[21:52:15] EmployeeID:"1" Cell click saleID:"2008"
+[21:52:16] EmployeeID:"1" Cell click saleID:"2008"
+[21:52:16] EmployeeID:"1" Cell click saleID:"2007"
+[21:52:17] EmployeeID:"1" Cell click saleID:"2008"
+[21:52:17] EmployeeID:"1" Cell click saleID:"2007"
+[21:52:18] EmployeeID:"1" Cell click saleID:"2005"
+[21:52:18] EmployeeID:"1" Cell click saleID:"2004"
+[21:52:18] EmployeeID:"1" Cell click saleID:"2003"
+[21:52:19] EmployeeID:"1" Cell click saleID:"2002"
+[21:52:19] EmployeeID:"1" Cell click saleID:"1003"
+[21:52:20] EmployeeID:"1" Cell click saleID:"1002"
+[21:52:20] EmployeeID:"1" Cell click saleID:"13"
+[21:52:21] EmployeeID:"1" Cell click saleID:"2008"
+[21:52:21] EmployeeID:"1" Cell click saleID:"2009"
+[21:52:22] EmployeeID:"1" Cell click saleID:"2010"
+[21:52:22] EmployeeID:"1" Cell click saleID:"2011"
+[21:52:22] EmployeeID:"1" Cell click saleID:"2012"
+[21:52:23] EmployeeID:"1" Cell click saleID:"2013"
+[21:52:24] EmployeeID:"1" Cell click saleID:"2011"
+[21:52:25] EmployeeID:"1" Cell click saleID:"2010"
+[21:52:25] EmployeeID:"1" Cell click saleID:"2009"
+[21:52:25] EmployeeID:"1" Cell click saleID:"2008"
+[21:52:26] EmployeeID:"1" Cell click saleID:"2005"
+[21:52:27] EmployeeID:"1" Cell click saleID:"2004"
+[21:52:27] EmployeeID:"1" Cell click saleID:"2003"
+[21:52:28] EmployeeID:"1" Cell click saleID:"2002"
+[21:52:28] EmployeeID:"1" Cell click saleID:"2003"
+[21:52:28] EmployeeID:"1" Cell click saleID:"2002"
+[21:52:29] EmployeeID:"1" Cell click saleID:"1003"
+[21:52:29] EmployeeID:"1" Cell click saleID:"1002"
+[21:52:30] EmployeeID:"1" Cell click saleID:"13"
+[21:52:37] EmployeeID:"1" Click search sale detail from->to:"29/1/2565 21:52:00->29/1/2565 21:52:00"
+[21:52:38] EmployeeID:"1" Click search sale detail from->to:"29/1/2565 21:52:00->29/1/2565 21:52:00"
+[21:52:38] EmployeeID:"1" Click search sale detail from->to:"29/1/2565 21:52:00->29/1/2565 21:52:00"
+[21:52:38] EmployeeID:"1" Click search sale detail from->to:"29/1/2565 21:52:00->29/1/2565 21:52:00"
+[21:52:41] EmployeeID:"1" Click search sale detail from->to:"29/1/2565 21:52:00->29/1/2565 21:52:00"
+[21:52:42] EmployeeID:"1" Click search sale detail from->to:"29/1/2565 21:52:00->29/1/2565 21:52:00"
+[21:52:45] EmployeeID:"1" Date Begin Value Changed:"3/1/2565 21:52:00"
+[21:52:46] EmployeeID:"1" Click search sale detail from->to:"3/1/2565 21:52:00->29/1/2565 21:52:00"
+[21:52:52] EmployeeID:"1" Open form main menu
+[21:52:52] EmployeeID:"1" Open form sale detail
+[21:53:02] EmployeeID:"1" Date Begin Value Changed:"18/1/2565 21:52:53"
+[21:53:08] EmployeeID:"1" Date Begin Value Changed:"18/7/2565 21:52:53"
+[21:53:11] EmployeeID:"1" Date Begin Value Changed:"18/7/2561 21:52:53"
+[21:53:13] EmployeeID:"1" Click search sale detail from->to:"18/7/2561 21:52:53->29/1/2565 21:52:53"
+[21:53:23] EmployeeID:"1" Click search sale detail from->to:"18/7/2561 21:52:53->29/1/2565 21:52:53"
+[21:53:24] EmployeeID:"1" Click search sale detail from->to:"18/7/2561 21:52:53->29/1/2565 21:52:53"
+[21:53:25] EmployeeID:"1" Click search sale detail from->to:"18/7/2561 21:52:53->29/1/2565 21:52:53"
+[21:53:25] EmployeeID:"1" Click search sale detail from->to:"18/7/2561 21:52:53->29/1/2565 21:52:53"
+[21:53:25] EmployeeID:"1" Click search sale detail from->to:"18/7/2561 21:52:53->29/1/2565 21:52:53"
+[21:54:36] EmployeeID:"1" Cell click saleID:"1003"
+[21:54:42] EmployeeID:"1" Cell click saleID:"2011"
+[21:54:43] EmployeeID:"1" Cell click saleID:"2010"
+[21:54:43] EmployeeID:"1" Cell click saleID:"2009"
+[21:54:44] EmployeeID:"1" Cell click saleID:"1002"
+[21:54:45] EmployeeID:"1" Cell click saleID:"1003"
+[21:54:46] EmployeeID:"1" Cell click saleID:"2002"
+[21:54:46] EmployeeID:"1" Cell click saleID:"2003"
+[21:54:47] EmployeeID:"1" Cell click saleID:"2002"
+[21:54:48] EmployeeID:"1" Cell click saleID:"1002"
+[21:56:00] Open Application
+[21:56:04] EmployeeID:"1" login
+[21:56:04] EmployeeID:"1" Open form main menu
+[21:56:06] EmployeeID:"1" Open form sale detail
+[21:56:09] EmployeeID:"1" Open form main menu
+[21:56:11] EmployeeID:"1" Exit Application
+[21:56:17] Open Application
+[21:56:26] EmployeeID:"1" login
+[21:56:26] EmployeeID:"1" Open form main menu
+[21:56:28] EmployeeID:"1" Open form sale detail
+[21:56:35] EmployeeID:"1" Open form main menu
+[21:56:50] Open Application
+[21:56:54] EmployeeID:"1" login
+[21:56:54] EmployeeID:"1" Open form main menu
+[21:56:56] EmployeeID:"1" Open form sale detail
+[21:57:06] EmployeeID:"1" Open form main menu
+[21:57:07] EmployeeID:"1" Exit Application
+[21:57:14] Open Application
+[21:57:20] EmployeeID:"1" login
+[21:57:20] EmployeeID:"1" Open form main menu
+[21:57:21] EmployeeID:"1" Open form sale detail
+[21:57:31] EmployeeID:"1" Open form main menu
+[21:57:34] EmployeeID:"1" Exit Application
+[21:57:40] Open Application
+[21:57:45] EmployeeID:"1" login
+[21:57:45] EmployeeID:"1" Open form main menu
+[21:57:46] EmployeeID:"1" Open form sale detail
+[21:58:07] EmployeeID:"1" Open form main menu
+[21:58:09] EmployeeID:"1" Exit Application

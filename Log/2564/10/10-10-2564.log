@@ -1,0 +1,145 @@
+[4:59:59] Open Application
+[5:00:03] EmployeeID:"1" login
+[5:00:03] EmployeeID:"1" Open form main menu
+[5:00:35] EmployeeID:"1" Open form sale
+[5:00:40] EmployeeID:"1" KeyDown ProductID:"1" Price:"15" Quantity:"1" Amount:"15.00"
+[5:00:41] EmployeeID:"1" KeyDown ProductID:"2" Price:"5" Quantity:"1" Amount:"5.00"
+[5:00:41] EmployeeID:"1" KeyDown ProductID:"3" Price:"10" Quantity:"1" Amount:"10.00"
+[5:00:42] EmployeeID:"1" KeyDown ProductID:"4" Price:"30" Quantity:"1" Amount:"30.00"
+[5:00:42] EmployeeID:"1" KeyDown ProductID:"5" Price:"15" Quantity:"1" Amount:"15.00"
+[5:00:43] EmployeeID:"1" ProductID KeyDown:Product not found
+[5:00:45] EmployeeID:"1" ProductID KeyDown:Product not found
+[5:00:46] EmployeeID:"1" KeyDown ProductID:"1" Price:"15" Chang Quantity Form->To:"1->2" Chang Amount Form->To:"15.00->30"
+[5:00:47] EmployeeID:"1" KeyDown ProductID:"2" Price:"5" Chang Quantity Form->To:"1->2" Chang Amount Form->To:"5.00->10"
+[5:00:48] EmployeeID:"1" KeyDown ProductID:"3" Price:"10" Chang Quantity Form->To:"1->2" Chang Amount Form->To:"10.00->20"
+[5:00:49] EmployeeID:"1" KeyDown ProductID:"4" Price:"30" Chang Quantity Form->To:"1->2" Chang Amount Form->To:"30.00->60"
+[5:00:49] EmployeeID:"1" KeyDown ProductID:"5" Price:"15" Chang Quantity Form->To:"1->2" Chang Amount Form->To:"15.00->30"
+[5:00:50] EmployeeID:"1" ProductID KeyDown:Product not found
+[5:00:53] EmployeeID:"1" KeyDown ProductID:"5" Price:"15" Chang Quantity Form->To:"2->3" Chang Amount Form->To:"30.00->45"
+[5:00:53] EmployeeID:"1" KeyDown ProductID:"5" Price:"15" Chang Quantity Form->To:"3->4" Chang Amount Form->To:"45.00->60"
+[5:00:54] EmployeeID:"1" KeyDown ProductID:"5" Price:"15" Chang Quantity Form->To:"4->5" Chang Amount Form->To:"60.00->75"
+[5:00:54] EmployeeID:"1" KeyDown ProductID:"5" Price:"15" Chang Quantity Form->To:"5->6" Chang Amount Form->To:"75.00->90"
+[5:00:54] EmployeeID:"1" KeyDown ProductID:"5" Price:"15" Chang Quantity Form->To:"6->7" Chang Amount Form->To:"90.00->105"
+[5:00:56] EmployeeID:"1" Click Clear Data
+[5:00:57] EmployeeID:"1" Click Clear Data
+[5:00:57] EmployeeID:"1" Click Clear Data
+[5:00:57] EmployeeID:"1" Click Clear Data
+[5:01:13] EmployeeID:"1" KeyDown ProductID:"1" Price:"15" Quantity:"1" Amount:"15.00"
+[5:01:14] EmployeeID:"1" KeyDown ProductID:"2" Price:"5" Quantity:"1" Amount:"5.00"
+[5:01:14] EmployeeID:"1" KeyDown ProductID:"3" Price:"10" Quantity:"1" Amount:"10.00"
+[5:01:22] EmployeeID:"1" KeyDown ProductID:"1" Price:"15" Chang Quantity Form->To:"1->10" Chang Amount Form->To:"15.00->150"
+[5:01:40] EmployeeID:"1" Open form main menu
+[5:01:41] EmployeeID:"1" Exit Application
+[5:05:09] Open Application
+[5:05:13] EmployeeID:"1" login
+[5:05:13] EmployeeID:"1" Open form main menu
+[5:05:15] EmployeeID:"1" Open form sale detail
+[5:05:21] EmployeeID:"1" Exit Application
+[5:25:10] Open Application
+[5:25:15] EmployeeID:"1" login
+[5:25:15] EmployeeID:"1" Open form main menu
+[5:25:16] EmployeeID:"1" Open form sale detail
+[5:26:39] Open Application
+[5:26:42] EmployeeID:"1" login
+[5:26:42] EmployeeID:"1" Open form main menu
+[5:26:43] EmployeeID:"1" Open form sale detail
+[5:44:19] Open Application
+[5:44:24] EmployeeID:"1" login
+[5:44:24] EmployeeID:"1" Open form main menu
+[5:44:25] EmployeeID:"1" Open form sale detail
+[5:44:54] Open Application
+[5:44:57] EmployeeID:"1" login
+[5:44:57] EmployeeID:"1" Open form main menu
+[5:44:58] EmployeeID:"1" Open form sale detail
+[5:46:37] Open Application
+[5:46:41] EmployeeID:"1" login
+[5:46:41] EmployeeID:"1" Open form main menu
+[5:46:42] EmployeeID:"1" Open form sale detail
+[5:49:57] Open Application
+[5:50:01] EmployeeID:"1" login
+[5:50:01] EmployeeID:"1" Open form main menu
+[5:50:02] EmployeeID:"1" Open form sale detail
+[5:50:33] Open Application
+[5:50:37] EmployeeID:"1" login
+[5:50:37] EmployeeID:"1" Open form main menu
+[5:50:37] EmployeeID:"1" Open form sale detail
+[5:50:48] Open Application
+[5:50:51] EmployeeID:"1" login
+[5:50:51] EmployeeID:"1" Open form main menu
+[5:50:52] EmployeeID:"1" Open form sale detail
+[5:51:03] Open Application
+[5:51:06] EmployeeID:"1" login
+[5:51:06] EmployeeID:"1" Open form main menu
+[5:51:07] EmployeeID:"1" Open form sale detail
+[5:51:23] Open Application
+[5:51:27] EmployeeID:"1" login
+[5:51:27] EmployeeID:"1" Open form main menu
+[5:51:29] EmployeeID:"1" Open form sale detail
+[5:52:03] Open Application
+[5:52:08] EmployeeID:"1" login
+[5:52:08] EmployeeID:"1" Open form main menu
+[5:52:09] EmployeeID:"1" Open form sale detail
+[5:53:34] Open Application
+[5:53:38] EmployeeID:"1" login
+[5:53:38] EmployeeID:"1" Open form main menu
+[5:53:39] EmployeeID:"1" Open form sale detail
+[5:54:14] Open Application
+[5:54:18] EmployeeID:"1" login
+[5:54:18] EmployeeID:"1" Open form main menu
+[5:54:19] EmployeeID:"1" Open form sale detail
+[5:55:52] Open Application
+[5:55:55] EmployeeID:"1" login
+[5:55:55] EmployeeID:"1" Open form main menu
+[5:55:56] EmployeeID:"1" Open form sale detail
+[5:57:18] Open Application
+[5:57:22] EmployeeID:"1" login
+[5:57:22] EmployeeID:"1" Open form main menu
+[5:57:22] EmployeeID:"1" Open form sale detail
+[5:57:56] Open Application
+[5:57:59] EmployeeID:"1" login
+[5:57:59] EmployeeID:"1" Open form main menu
+[5:58:00] EmployeeID:"1" Open form sale detail
+[5:58:19] Open Application
+[5:58:22] EmployeeID:"1" login
+[5:58:22] EmployeeID:"1" Open form main menu
+[5:58:23] EmployeeID:"1" Open form sale detail
+[5:58:49] Open Application
+[5:58:52] EmployeeID:"1" login
+[5:58:52] EmployeeID:"1" Open form main menu
+[5:58:53] EmployeeID:"1" Open form sale detail
+[5:59:25] Open Application
+[5:59:29] EmployeeID:"1" login
+[5:59:30] EmployeeID:"1" Open form main menu
+[5:59:30] EmployeeID:"1" Open form sale detail
+[6:01:05] Open Application
+[6:01:08] EmployeeID:"1" login
+[6:01:08] EmployeeID:"1" Open form main menu
+[6:01:09] EmployeeID:"1" Open form sale detail
+[6:01:16] Open Application
+[6:01:20] EmployeeID:"1" login
+[6:01:20] EmployeeID:"1" Open form main menu
+[6:01:21] EmployeeID:"1" Open form sale detail
+[6:11:56] Open Application
+[6:12:01] EmployeeID:"1" login
+[6:12:01] EmployeeID:"1" Open form main menu
+[6:12:02] EmployeeID:"1" Open form sale detail
+[6:12:47] Open Application
+[6:12:52] EmployeeID:"1" login
+[6:12:52] EmployeeID:"1" Open form main menu
+[6:12:52] EmployeeID:"1" Open form sale detail
+[6:13:53] Open Application
+[6:13:58] EmployeeID:"1" login
+[6:13:58] EmployeeID:"1" Open form main menu
+[6:13:59] EmployeeID:"1" Open form sale detail
+[6:14:15] Open Application
+[6:14:19] EmployeeID:"1" login
+[6:14:19] EmployeeID:"1" Open form main menu
+[6:14:20] EmployeeID:"1" Open form sale detail
+[6:15:01] Open Application
+[6:15:05] EmployeeID:"1" login
+[6:15:05] EmployeeID:"1" Open form main menu
+[6:15:06] EmployeeID:"1" Open form sale detail
+[6:17:21] Open Application
+[6:17:24] EmployeeID:"1" login
+[6:17:24] EmployeeID:"1" Open form main menu
+[6:17:25] EmployeeID:"1" Open form sale detail
