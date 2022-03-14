@@ -1,0 +1,2 @@
+# MiniShopApp.Net
+ MiniShopApp EntityFrameworkCore
