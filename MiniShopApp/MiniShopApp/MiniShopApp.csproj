@@ -390,8 +390,6 @@
       <DependentUpon>Receipt.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Models\Category.cs" />
-    <Compile Include="Models\DatabaseContext.cs" />
     <Compile Include="Models\db\Categories.cs" />
     <Compile Include="Models\db\Employees.cs" />
     <Compile Include="Models\db\MiniShopContext.cs" />
@@ -399,11 +397,6 @@
     <Compile Include="Models\db\Sales.cs" />
     <Compile Include="Models\db\SalesDtl.cs" />
     <Compile Include="Models\db\Shelfs.cs" />
-    <Compile Include="Models\Employee.cs" />
-    <Compile Include="Models\Product.cs" />
-    <Compile Include="Models\SaleDtl.cs" />
-    <Compile Include="Models\Sales.cs" />
-    <Compile Include="Models\Shelf.cs" />
     <Compile Include="FrmProducts\FrmProCRUD.cs">
       <SubType>Form</SubType>
     </Compile>

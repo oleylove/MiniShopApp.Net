@@ -151,14 +151,5 @@ namespace MiniShopApp
             }
 
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            int _SaleId = 13;
-            string _Cash = "Cash 200";
-            string _Change = "Change 200";
-            FrmReceipt frm = new FrmReceipt(_SaleId, _Cash, _Change);
-            frm.Show();
-        }
     }
 }

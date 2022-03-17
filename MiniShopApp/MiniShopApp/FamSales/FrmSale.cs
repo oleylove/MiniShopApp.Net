@@ -123,7 +123,8 @@ namespace MiniShopApp.FamSales
                         else
                         {
                             double change = cash - toltalAll;
-                            LabChange.Text = String.Format("{0:F2}", change);
+                            TxtCash.Text = String.Format("{0:N}", cash);
+                            LabChange.Text = String.Format("{0:N}", change);
                             BtnSave.Focus();
                             _ = new CreateLogFile("EmployeeID:" + '"' + _EmpId + '"' + " Cash KeyDown:Cash->Toltal All->Change:" + cash + "->" + toltalAll + "->" + change);
                         }
@@ -345,14 +346,14 @@ namespace MiniShopApp.FamSales
                             " SaleID:" + '"' + _SaleId + '"' + "Successfully");
 
                         MessageBox.Show("บันทึกรายการขายแล้ว", Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        FrmReceipt frm = new FrmReceipt(_SaleId, TxtCash.Text, LabChange.Text);
                         DgvSaleDetail.Rows.Clear();
                         LabTotalAmount.Text = "";
                         LabChange.Text = "";
                         TxtCash.Clear();
                         TxtKeyProID.Focus();
                         i = 0;
-                        //FrmReceipt frm = new FrmReceipt(_SaleId);
-                        //frm.Show();
+                        frm.Show();
                     }
                     else
                     {

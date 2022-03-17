@@ -58,10 +58,12 @@ namespace MiniShopApp.FrmReports
                     rpt.SetDataSource(dt);
                     TextObject txtShopName = (TextObject)rpt.ReportDefinition.Sections["Section1"].ReportObjects["ShopName"];
                     TextObject txtShopPhone = (TextObject)rpt.ReportDefinition.Sections["Section1"].ReportObjects["ShopPhone"];
+                    TextObject txtSaleId = (TextObject)rpt.ReportDefinition.Sections["Section1"].ReportObjects["SaleId"];
                     TextObject txtCash = (TextObject)rpt.ReportDefinition.Sections["Section4"].ReportObjects["Cash"];
                     TextObject txtChange = (TextObject)rpt.ReportDefinition.Sections["Section4"].ReportObjects["Change"];
                     txtShopName.Text = _ShopName;
                     txtShopPhone.Text = "Tel : " + _ShopPhone;
+                    txtSaleId.Text = _SaleId.ToString();
                     txtCash.Text =  _Cash;
                     txtChange.Text = _Change;
                     rptReceipt.ReportSource = rpt;
