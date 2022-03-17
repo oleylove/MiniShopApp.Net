@@ -11,6 +11,7 @@ using System.Threading;
 using System.IO;
 using System.Windows.Forms;
 using MiniShopApp.Models.db;
+using MiniShopApp.FrmReports;
 using System.Configuration;
 
 namespace MiniShopApp.FamSales
@@ -350,6 +351,8 @@ namespace MiniShopApp.FamSales
                         TxtCash.Clear();
                         TxtKeyProID.Focus();
                         i = 0;
+                        //FrmReceipt frm = new FrmReceipt(_SaleId);
+                        //frm.Show();
                     }
                     else
                     {

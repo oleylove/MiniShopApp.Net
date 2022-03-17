@@ -47,6 +47,7 @@ namespace MiniShopApp
             this.LabRegister = new System.Windows.Forms.Label();
             this.BtnRegister = new System.Windows.Forms.Button();
             this.TimeRegister = new System.Windows.Forms.Timer(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             this.StatusStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -241,12 +242,23 @@ namespace MiniShopApp
             this.TimeRegister.Enabled = true;
             this.TimeRegister.Tick += new System.EventHandler(this.TimeRegister_Tick);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(725, 21);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(128, 63);
+            this.button1.TabIndex = 70;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(968, 404);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnRegister);
             this.Controls.Add(this.LabRegister);
             this.Controls.Add(this.label3);
@@ -289,5 +301,6 @@ namespace MiniShopApp
         private System.Windows.Forms.Label LabRegister;
         private System.Windows.Forms.Button BtnRegister;
         private System.Windows.Forms.Timer TimeRegister;
+        private System.Windows.Forms.Button button1;
     }
 }
