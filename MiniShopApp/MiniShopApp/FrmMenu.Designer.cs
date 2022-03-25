@@ -31,6 +31,8 @@ namespace MiniShopApp
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenu));
             this.LabEmpName = new System.Windows.Forms.Label();
+            this.LabEmpId = new System.Windows.Forms.Label();
+            this.BtnSettings = new System.Windows.Forms.Button();
             this.BtnReport = new System.Windows.Forms.Button();
             this.BtnExit = new System.Windows.Forms.Button();
             this.BntSaleDetail = new System.Windows.Forms.Button();
@@ -40,7 +42,6 @@ namespace MiniShopApp
             this.BtnStockMenu = new System.Windows.Forms.Button();
             this.PtbEmp = new System.Windows.Forms.PictureBox();
             this.BtnSale = new System.Windows.Forms.Button();
-            this.LabEmpId = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PtbEmp)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,6 +56,37 @@ namespace MiniShopApp
             this.LabEmpName.Size = new System.Drawing.Size(160, 44);
             this.LabEmpName.TabIndex = 57;
             this.LabEmpName.Text = "แสดงชื่อผู้ใช้";
+            // 
+            // LabEmpId
+            // 
+            this.LabEmpId.Font = new System.Drawing.Font("Kanit", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabEmpId.ForeColor = System.Drawing.Color.Black;
+            this.LabEmpId.Location = new System.Drawing.Point(4, 401);
+            this.LabEmpId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LabEmpId.Name = "LabEmpId";
+            this.LabEmpId.Size = new System.Drawing.Size(285, 44);
+            this.LabEmpId.TabIndex = 66;
+            this.LabEmpId.Text = "id";
+            this.LabEmpId.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // BtnSettings
+            // 
+            this.BtnSettings.BackColor = System.Drawing.Color.Transparent;
+            this.BtnSettings.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnSettings.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.BtnSettings.FlatAppearance.BorderSize = 0;
+            this.BtnSettings.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BtnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSettings.Font = new System.Drawing.Font("Kanit", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSettings.Image = global::MiniShopApp.Properties.Resources.settings;
+            this.BtnSettings.Location = new System.Drawing.Point(1196, 481);
+            this.BtnSettings.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.BtnSettings.Name = "BtnSettings";
+            this.BtnSettings.Size = new System.Drawing.Size(60, 60);
+            this.BtnSettings.TabIndex = 67;
+            this.BtnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnSettings.UseVisualStyleBackColor = false;
+            this.BtnSettings.Click += new System.EventHandler(this.BtnSettings_Click);
             // 
             // BtnReport
             // 
@@ -225,23 +257,12 @@ namespace MiniShopApp
             this.BtnSale.UseVisualStyleBackColor = false;
             this.BtnSale.Click += new System.EventHandler(this.BtnSale_Click);
             // 
-            // LabEmpId
-            // 
-            this.LabEmpId.Font = new System.Drawing.Font("Kanit", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabEmpId.ForeColor = System.Drawing.Color.Black;
-            this.LabEmpId.Location = new System.Drawing.Point(4, 401);
-            this.LabEmpId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LabEmpId.Name = "LabEmpId";
-            this.LabEmpId.Size = new System.Drawing.Size(285, 44);
-            this.LabEmpId.TabIndex = 66;
-            this.LabEmpId.Text = "id";
-            this.LabEmpId.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1258, 544);
+            this.Controls.Add(this.BtnSettings);
             this.Controls.Add(this.LabEmpId);
             this.Controls.Add(this.BtnReport);
             this.Controls.Add(this.BtnExit);
@@ -276,5 +297,6 @@ namespace MiniShopApp
         private System.Windows.Forms.PictureBox PtbEmp;
         private System.Windows.Forms.Button BtnSale;
         private System.Windows.Forms.Label LabEmpId;
+        private System.Windows.Forms.Button BtnSettings;
     }
 }

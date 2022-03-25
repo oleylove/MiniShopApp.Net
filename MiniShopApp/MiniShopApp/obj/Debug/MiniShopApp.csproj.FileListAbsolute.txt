@@ -328,6 +328,7 @@ D:\ProjectWindowsForm\MiniShopApp.Net\MiniShopApp\MiniShopApp\obj\Debug\MiniShop
 D:\ProjectWindowsForm\MiniShopApp.Net\MiniShopApp\MiniShopApp\obj\Debug\MiniShopApp.FrmProducts.FrmProduct.resources
 D:\ProjectWindowsForm\MiniShopApp.Net\MiniShopApp\MiniShopApp\obj\Debug\MiniShopApp.FrmReports.FrmReceipt.resources
 D:\ProjectWindowsForm\MiniShopApp.Net\MiniShopApp\MiniShopApp\obj\Debug\MiniShopApp.FrmReports.FrmReport.resources
+D:\ProjectWindowsForm\MiniShopApp.Net\MiniShopApp\MiniShopApp\obj\Debug\MiniShopApp.FrmSettings.resources
 D:\ProjectWindowsForm\MiniShopApp.Net\MiniShopApp\MiniShopApp\obj\Debug\MiniShopApp.Properties.Resources.resources
 D:\ProjectWindowsForm\MiniShopApp.Net\MiniShopApp\MiniShopApp\obj\Debug\MiniShopApp.FamSales.FrmSale.resources
 D:\ProjectWindowsForm\MiniShopApp.Net\MiniShopApp\MiniShopApp\obj\Debug\MiniShopApp.csproj.GenerateResource.cache

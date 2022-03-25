@@ -184,7 +184,12 @@ namespace MiniShopApp
             {
                 MessageBox.Show(ex.Message);
             }
+        }
 
+        private void BtnSettings_Click(object sender, EventArgs e)
+        {
+            FrmSettings frm = new FrmSettings();
+            frm.Show();
         }
     }
 }
