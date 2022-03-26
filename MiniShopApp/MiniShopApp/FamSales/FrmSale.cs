@@ -20,12 +20,22 @@ namespace MiniShopApp.FamSales
     {
         public int i = 0; //กำหนดแถวกิต
         public string _EmpId;
-        public string _PathImagesEmp = ConfigurationManager.AppSettings["PathImagesEmp"];
+        //public string _PathImagesEmp = ConfigurationManager.AppSettings["PathImagesEmp"];
+        public Config SysConfig = new Config();
+        public static FrmSale This = null;
 
         public FrmSale(string _EmpId)
         {
             InitializeComponent();
             this._EmpId = _EmpId;
+
+            SysConfig = new Config();
+            This = this;
+            Config deserSetting = SysConfig.DeserializeFromXML();
+            if (deserSetting != null)
+            {
+                SysConfig = deserSetting;
+            }
         }
         private void FrmSale_Load(object sender, EventArgs e)
         {
@@ -35,6 +45,7 @@ namespace MiniShopApp.FamSales
                 {
                     Thread.CurrentThread.CurrentCulture = new CultureInfo("th-TH");
                     TsstDate.Text = DateTime.Today.ToString("dd MMMM yyyy");
+                    TsstSystemName.Text = SysConfig.ShopName;
                     DataGridViewStyle();
                     var employee = db.Employees.FirstOrDefault(emp => emp.EmpId.Equals(_EmpId));
                     if (employee != null)
@@ -51,9 +62,9 @@ namespace MiniShopApp.FamSales
                                 PtbEmp.SizeMode = PictureBoxSizeMode.StretchImage;
                                 break;
                             default:
-                                if (File.Exists(_PathImagesEmp + employee.EmpPhoto))
+                                if (File.Exists(SysConfig.PathImagesEmployee + employee.EmpPhoto))
                                 {
-                                    using (FileStream stream = new FileStream(_PathImagesEmp + employee.EmpPhoto,
+                                    using (FileStream stream = new FileStream(SysConfig.PathImagesEmployee + employee.EmpPhoto,
                                         FileMode.Open,
                                         FileAccess.Read,
                                         FileShare.Delete))
@@ -363,6 +374,13 @@ namespace MiniShopApp.FamSales
                     }
                 }
             }
+        }
+
+        private void BtnLogout_Click(object sender, EventArgs e)
+        {
+            FrmLogin frm = new FrmLogin();
+            this.Close();
+            frm.Show();
         }
     }
 }

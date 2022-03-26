@@ -18,12 +18,23 @@ namespace MiniShopApp.FrmEmployees
     public partial class FrmEmployee : Form
     {
         public string _EmpId;
-        public string _PathImagesEmp = ConfigurationManager.AppSettings["PathImagesEmp"];
+        //public string _PathImagesEmp = ConfigurationManager.AppSettings["PathImagesEmp"];
+        public Config SysConfig = new Config();
+        public static FrmEmployee This = null;
 
         public FrmEmployee(string _EmpId)
         {
             InitializeComponent();
             this._EmpId = _EmpId;
+
+            SysConfig = new Config();
+            This = this;
+            Config deserSetting = SysConfig.DeserializeFromXML();
+            if (deserSetting != null)
+            {
+                SysConfig = deserSetting;
+            }
+
         }
         private void FrmEmployee_Load(object sender, EventArgs e)
         {
@@ -33,7 +44,7 @@ namespace MiniShopApp.FrmEmployees
                 {
                     Thread.CurrentThread.CurrentCulture = new CultureInfo("th-TH");
                     TsstDate.Text = DateTime.Today.ToString("dd MMMM yyyy");
-
+                    TsstSystemName.Text = SysConfig.ShopName;
                     var employee = db.Employees.FirstOrDefault(emp => emp.EmpId.Equals(_EmpId));
                     if (employee != null)
                     {
@@ -51,9 +62,9 @@ namespace MiniShopApp.FrmEmployees
                                 PtbEmp.SizeMode = PictureBoxSizeMode.StretchImage;
                                 break;
                             default:
-                                if (File.Exists(_PathImagesEmp + employee.EmpPhoto))
+                                if (File.Exists(SysConfig.PathImagesEmployee + employee.EmpPhoto))
                                 {
-                                    using (FileStream stream = new FileStream(_PathImagesEmp + employee.EmpPhoto,
+                                    using (FileStream stream = new FileStream(SysConfig.PathImagesEmployee + employee.EmpPhoto,
                                         FileMode.Open,
                                         FileAccess.Read,
                                         FileShare.Delete))
@@ -248,9 +259,9 @@ namespace MiniShopApp.FrmEmployees
                                 PtbEmployee.SizeMode = PictureBoxSizeMode.StretchImage;
                                 break;
                             default:
-                                if (File.Exists(_PathImagesEmp + emp.EmpPhoto.ToString()))
+                                if (File.Exists(SysConfig.PathImagesEmployee + emp.EmpPhoto.ToString()))
                                 {
-                                    using (FileStream stream = new FileStream(_PathImagesEmp + emp.EmpPhoto.ToString(),
+                                    using (FileStream stream = new FileStream(SysConfig.PathImagesEmployee + emp.EmpPhoto.ToString(),
                                         FileMode.Open,
                                         FileAccess.Read,
                                         FileShare.Delete))

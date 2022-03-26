@@ -11,12 +11,13 @@ namespace MiniShopApp.FrmReports
 {
     public partial class FrmReport : Form
     {
+        public string _EmpId;
         private int _SaleYear;
         private readonly MiniShopContext db = new MiniShopContext();
-        public FrmReport()
+        public FrmReport(string _EmpId)
         {
             InitializeComponent();
-
+            this._EmpId = _EmpId;
         }
 
         private void FrmReport_Load(object sender, EventArgs e)
@@ -26,14 +27,6 @@ namespace MiniShopApp.FrmReports
         }
         private void FillChartSaleYear()
         {
-            //var Sale = (from s in db.Sales
-            //                  group s by s.SaleCreate.Value.Year into g
-            //                  select new
-            //                  {
-            //                      Year = g.Key,
-            //                      Total = g.Sum(x => x.SaleAmount),
-            //                  }).ToArray();
-
             var Sale = db.Sales.Select(k => new { k.SaleCreate.Value.Year, k.SaleAmount })
                 .GroupBy(x => new { x.Year }, (key, group) => new
                 {
@@ -92,16 +85,6 @@ namespace MiniShopApp.FrmReports
             {
                 _SaleYear = _Year;
             }
-            //var Sale = db.Sales.Where(j=>j.SaleCreate.Value.Year.Equals(_SaleYear))
-            //    .Select(k => new { k.SaleCreate.Value.Year, k.SaleCreate.Value.Month, k.SaleAmount })
-            //    .GroupBy(x => new { x.Year, x.Month }, (key, group) => new
-            //    {
-            //        _Year = key.Year,
-            //        _Month = key.Month,
-            //        _SaleAmount = group.Sum(k => k.SaleAmount)
-            //    })
-            //    .OrderBy(j=>j._Year).ToList();
-
             var Sale = db.Sales.Where(j => j.SaleCreate.Value.Year.Equals(_SaleYear))
                 .Select(k => new { k.SaleCreate.Value.Month, k.SaleAmount })
                 .GroupBy(x => new { x.Month }, (key, group) => new
@@ -158,20 +141,25 @@ namespace MiniShopApp.FrmReports
             });
         }
 
-        //private void BtnView_Click(object sender, EventArgs e)
-        //{
-        //    ChartSaleMonth.Series.Clear();
-        //    ChartSaleMonth.AxisX.Clear();
-        //    ChartSaleMonth.AxisY.Clear();
-        //    FillChartSaleMonth();
-        //}
-
         private void CboSelectYear_SelectedIndexChanged(object sender, EventArgs e)
         {
             ChartSaleMonth.Series.Clear();
             ChartSaleMonth.AxisX.Clear();
             ChartSaleMonth.AxisY.Clear();
             FillChartSaleMonth();
+
+        }
+
+        private void BtnClose_Click(object sender, EventArgs e)
+        {
+            Form f = Application.OpenForms["FrmMenu"];
+            if (((FrmMenu)f) != null)
+            {
+                f.Close();
+            }
+            FrmMenu frm = new FrmMenu(_EmpId);
+            this.Close();
+            frm.Show();
 
         }
     }

@@ -30,9 +30,9 @@ namespace MiniShopApp.FamSales
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.BtnSave = new System.Windows.Forms.Button();
             this.TxtProQty = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -43,8 +43,8 @@ namespace MiniShopApp.FamSales
             this.LabChange = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.TxtCash = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.TxtCash = new System.Windows.Forms.TextBox();
             this.StatusStripSystem = new System.Windows.Forms.StatusStrip();
             this.TsslUserName = new System.Windows.Forms.ToolStripStatusLabel();
             this.TsstSystemName = new System.Windows.Forms.ToolStripStatusLabel();
@@ -55,7 +55,6 @@ namespace MiniShopApp.FamSales
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.PtbEmp = new System.Windows.Forms.PictureBox();
             this.BtnClear = new System.Windows.Forms.Button();
-            this.BtnMenu = new System.Windows.Forms.Button();
             this.DgvSaleDetail = new System.Windows.Forms.DataGridView();
             this.Order = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProId = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,6 +63,8 @@ namespace MiniShopApp.FamSales
             this.ProPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SdtQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SdtAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BtnLogout = new System.Windows.Forms.Button();
+            this.BtnMenu = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.StatusStripSystem.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -82,7 +83,7 @@ namespace MiniShopApp.FamSales
             this.BtnSave.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnSave.Name = "BtnSave";
             this.BtnSave.Size = new System.Drawing.Size(541, 154);
-            this.BtnSave.TabIndex = 68;
+            this.BtnSave.TabIndex = 5;
             this.BtnSave.Text = " บันทึกการขาย";
             this.BtnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnSave.UseVisualStyleBackColor = false;
@@ -94,7 +95,7 @@ namespace MiniShopApp.FamSales
             this.TxtProQty.Location = new System.Drawing.Point(701, 102);
             this.TxtProQty.Name = "TxtProQty";
             this.TxtProQty.Size = new System.Drawing.Size(120, 43);
-            this.TxtProQty.TabIndex = 9;
+            this.TxtProQty.TabIndex = 2;
             this.TxtProQty.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label6
@@ -125,7 +126,7 @@ namespace MiniShopApp.FamSales
             this.TxtKeyProID.Location = new System.Drawing.Point(289, 102);
             this.TxtKeyProID.Name = "TxtKeyProID";
             this.TxtKeyProID.Size = new System.Drawing.Size(376, 43);
-            this.TxtKeyProID.TabIndex = 4;
+            this.TxtKeyProID.TabIndex = 1;
             this.TxtKeyProID.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtKeyProID_KeyDown);
             // 
             // LabTotalAmount
@@ -134,7 +135,7 @@ namespace MiniShopApp.FamSales
             this.LabTotalAmount.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.LabTotalAmount.Font = new System.Drawing.Font("Kanit Medium", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabTotalAmount.ForeColor = System.Drawing.Color.White;
-            this.LabTotalAmount.Location = new System.Drawing.Point(202, 47);
+            this.LabTotalAmount.Location = new System.Drawing.Point(212, 47);
             this.LabTotalAmount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabTotalAmount.Name = "LabTotalAmount";
             this.LabTotalAmount.Size = new System.Drawing.Size(316, 116);
@@ -145,10 +146,10 @@ namespace MiniShopApp.FamSales
             // 
             this.groupBox2.Controls.Add(this.LabChange);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.TxtCash);
             this.groupBox2.Controls.Add(this.LabTotalAmount);
+            this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Location = new System.Drawing.Point(1348, 7);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(541, 513);
@@ -160,18 +161,18 @@ namespace MiniShopApp.FamSales
             this.LabChange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.LabChange.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.LabChange.Font = new System.Drawing.Font("Kanit Medium", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabChange.Location = new System.Drawing.Point(202, 348);
+            this.LabChange.Location = new System.Drawing.Point(212, 348);
             this.LabChange.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabChange.Name = "LabChange";
             this.LabChange.Size = new System.Drawing.Size(316, 116);
-            this.LabChange.TabIndex = 22;
+            this.LabChange.TabIndex = 4;
             this.LabChange.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Kanit", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(20, 382);
+            this.label8.Location = new System.Drawing.Point(30, 382);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(175, 70);
             this.label8.TabIndex = 21;
@@ -181,33 +182,33 @@ namespace MiniShopApp.FamSales
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Kanit", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(50, 234);
+            this.label7.Location = new System.Drawing.Point(5, 234);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(145, 70);
+            this.label7.Size = new System.Drawing.Size(200, 70);
             this.label7.TabIndex = 19;
-            this.label7.Text = "รับเงิน";
-            // 
-            // TxtCash
-            // 
-            this.TxtCash.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.TxtCash.Font = new System.Drawing.Font("Kanit Medium", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCash.Location = new System.Drawing.Point(202, 198);
-            this.TxtCash.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.TxtCash.Name = "TxtCash";
-            this.TxtCash.Size = new System.Drawing.Size(316, 115);
-            this.TxtCash.TabIndex = 20;
-            this.TxtCash.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TxtCash.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtCash_KeyDown);
+            this.label7.Text = "รับเงินสด";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Kanit", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(7, 81);
+            this.label5.Location = new System.Drawing.Point(17, 81);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(188, 70);
             this.label5.TabIndex = 18;
             this.label5.Text = "ราคารวม";
+            // 
+            // TxtCash
+            // 
+            this.TxtCash.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.TxtCash.Font = new System.Drawing.Font("Kanit Medium", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCash.Location = new System.Drawing.Point(212, 198);
+            this.TxtCash.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TxtCash.Name = "TxtCash";
+            this.TxtCash.Size = new System.Drawing.Size(316, 115);
+            this.TxtCash.TabIndex = 3;
+            this.TxtCash.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TxtCash.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtCash_KeyDown);
             // 
             // StatusStripSystem
             // 
@@ -304,25 +305,6 @@ namespace MiniShopApp.FamSales
             this.BtnClear.UseVisualStyleBackColor = false;
             this.BtnClear.Click += new System.EventHandler(this.BtnClear_Click);
             // 
-            // BtnMenu
-            // 
-            this.BtnMenu.BackColor = System.Drawing.Color.White;
-            this.BtnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnMenu.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.BtnMenu.FlatAppearance.BorderSize = 0;
-            this.BtnMenu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.BtnMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
-            this.BtnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMenu.Font = new System.Drawing.Font("Kanit", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMenu.Image = global::MiniShopApp.Properties.Resources.Home;
-            this.BtnMenu.Location = new System.Drawing.Point(1754, 782);
-            this.BtnMenu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.BtnMenu.Name = "BtnMenu";
-            this.BtnMenu.Size = new System.Drawing.Size(135, 135);
-            this.BtnMenu.TabIndex = 72;
-            this.BtnMenu.UseVisualStyleBackColor = false;
-            this.BtnMenu.Click += new System.EventHandler(this.BtnMenu_Click);
-            // 
             // DgvSaleDetail
             // 
             this.DgvSaleDetail.AllowUserToAddRows = false;
@@ -330,13 +312,13 @@ namespace MiniShopApp.FamSales
             this.DgvSaleDetail.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.DgvSaleDetail.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.DgvSaleDetail.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Kanit Medium", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.DgvSaleDetail.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Kanit Medium", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.DgvSaleDetail.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.DgvSaleDetail.ColumnHeadersHeight = 34;
             this.DgvSaleDetail.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Order,
@@ -346,25 +328,25 @@ namespace MiniShopApp.FamSales
             this.ProPrice,
             this.SdtQty,
             this.SdtAmount});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Kanit", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DgvSaleDetail.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Kanit", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgvSaleDetail.DefaultCellStyle = dataGridViewCellStyle5;
             this.DgvSaleDetail.Location = new System.Drawing.Point(13, 241);
             this.DgvSaleDetail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.DgvSaleDetail.Name = "DgvSaleDetail";
             this.DgvSaleDetail.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Kanit", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.DgvSaleDetail.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Kanit", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.DgvSaleDetail.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.DgvSaleDetail.RowHeadersVisible = false;
             this.DgvSaleDetail.RowHeadersWidth = 62;
             this.DgvSaleDetail.RowTemplate.Height = 30;
@@ -428,6 +410,46 @@ namespace MiniShopApp.FamSales
             this.SdtAmount.Name = "SdtAmount";
             this.SdtAmount.ReadOnly = true;
             // 
+            // BtnLogout
+            // 
+            this.BtnLogout.BackColor = System.Drawing.Color.Transparent;
+            this.BtnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnLogout.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.BtnLogout.FlatAppearance.BorderSize = 0;
+            this.BtnLogout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BtnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLogout.Font = new System.Drawing.Font("Kanit Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLogout.ForeColor = System.Drawing.Color.Red;
+            this.BtnLogout.Image = global::MiniShopApp.Properties.Resources.check_out32;
+            this.BtnLogout.Location = new System.Drawing.Point(1685, 807);
+            this.BtnLogout.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.BtnLogout.Name = "BtnLogout";
+            this.BtnLogout.Size = new System.Drawing.Size(200, 110);
+            this.BtnLogout.TabIndex = 154;
+            this.BtnLogout.Text = "Logout";
+            this.BtnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnLogout.UseVisualStyleBackColor = false;
+            this.BtnLogout.Click += new System.EventHandler(this.BtnLogout_Click);
+            // 
+            // BtnMenu
+            // 
+            this.BtnMenu.BackColor = System.Drawing.Color.White;
+            this.BtnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnMenu.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.BtnMenu.FlatAppearance.BorderSize = 0;
+            this.BtnMenu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.BtnMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
+            this.BtnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMenu.Font = new System.Drawing.Font("Kanit", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMenu.Image = global::MiniShopApp.Properties.Resources.Home;
+            this.BtnMenu.Location = new System.Drawing.Point(1532, 807);
+            this.BtnMenu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.BtnMenu.Name = "BtnMenu";
+            this.BtnMenu.Size = new System.Drawing.Size(140, 110);
+            this.BtnMenu.TabIndex = 72;
+            this.BtnMenu.UseVisualStyleBackColor = false;
+            this.BtnMenu.Click += new System.EventHandler(this.BtnMenu_Click);
+            // 
             // FrmSale
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -435,9 +457,10 @@ namespace MiniShopApp.FamSales
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1898, 968);
             this.ControlBox = false;
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.BtnLogout);
             this.Controls.Add(this.DgvSaleDetail);
             this.Controls.Add(this.BtnSave);
-            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.StatusStripSystem);
             this.Controls.Add(this.BtnMenu);
             this.Controls.Add(this.groupBox1);
@@ -492,5 +515,6 @@ namespace MiniShopApp.FamSales
         private System.Windows.Forms.DataGridViewTextBoxColumn ProPrice;
         private System.Windows.Forms.DataGridViewTextBoxColumn SdtQty;
         private System.Windows.Forms.DataGridViewTextBoxColumn SdtAmount;
+        private System.Windows.Forms.Button BtnLogout;
     }
 }

@@ -11,26 +11,53 @@ using MiniShopApp.Models.db;
 using System.Configuration;
 using System.IO;
 using MiniShopApp.FrmEmployees;
-using MiniShopApp.FrmReports;
+using System.Reflection;
+
 
 namespace MiniShopApp
 {
     public partial class FrmLogin : Form
     {
-        public string _PathLog = ConfigurationManager.AppSettings["PathLog"];
+        //public string _PathLog = ConfigurationManager.AppSettings["PathLog"];
         public static int count = 0;
+
+        public Config SysConfig = new Config();
+        public static FrmLogin This = null;
         public FrmLogin()
         {
             InitializeComponent();
+
+            SysConfig = new Config();
+            This = this;
+
+            Config deserSetting = SysConfig.DeserializeFromXML();
+            if (deserSetting != null)
+            {
+                SysConfig = deserSetting;
+            }
         }
         private void FrmLogin_Load(object sender, EventArgs e)
         {
+            //AssemblyName assmName = Assembly.GetExecutingAssembly().GetName();
+            //this.Text = String.Format("{0} {1}", assmName.Name, assmName.Version);
+
+
+
+            // Get the bitmap.
+            Bitmap bm = new Bitmap(Properties.Resources.check_in64);
+
+            // Convert to an icon and use for the form's icon.
+            this.Icon = Icon.FromHandle(bm.GetHicon());
+
+
+            tsstSystemName.Text = SysConfig.ShopName;
+
             Thread.CurrentThread.CurrentCulture = new CultureInfo("th-TH");
             tsstDate.Text = DateTime.Today.ToString("dd MMMM yyyy");
 
-            if (!File.Exists(_PathLog))
+            if (!File.Exists(SysConfig.PathLogFile))
             {
-                Directory.CreateDirectory(_PathLog);
+                Directory.CreateDirectory(SysConfig.PathLogFile);
             }
             _ = new CreateLogFile("Open Application");
 

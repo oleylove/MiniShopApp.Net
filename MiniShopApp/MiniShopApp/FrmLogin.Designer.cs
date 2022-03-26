@@ -42,11 +42,11 @@ namespace MiniShopApp
             this.tsstTime = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
             this.BtnLogin = new System.Windows.Forms.Button();
-            this.BtnExit = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.LabRegister = new System.Windows.Forms.Label();
             this.BtnRegister = new System.Windows.Forms.Button();
             this.TimeRegister = new System.Windows.Forms.Timer(this.components);
+            this.BtnExit = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.StatusStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -174,37 +174,6 @@ namespace MiniShopApp
             this.BtnLogin.UseVisualStyleBackColor = true;
             this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
-            // BtnExit
-            // 
-            this.BtnExit.BackColor = System.Drawing.Color.White;
-            this.BtnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.BtnExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnExit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.BtnExit.FlatAppearance.BorderSize = 0;
-            this.BtnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.BtnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnExit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnExit.ForeColor = System.Drawing.Color.Transparent;
-            this.BtnExit.Image = global::MiniShopApp.Properties.Resources.Exit3;
-            this.BtnExit.Location = new System.Drawing.Point(875, 275);
-            this.BtnExit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.BtnExit.Name = "BtnExit";
-            this.BtnExit.Size = new System.Drawing.Size(80, 80);
-            this.BtnExit.TabIndex = 66;
-            this.BtnExit.UseVisualStyleBackColor = false;
-            this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MiniShopApp.Properties.Resources.Security;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 13);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(240, 240);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 64;
-            this.pictureBox1.TabStop = false;
-            // 
             // LabRegister
             // 
             this.LabRegister.AutoSize = true;
@@ -241,12 +210,43 @@ namespace MiniShopApp
             this.TimeRegister.Enabled = true;
             this.TimeRegister.Tick += new System.EventHandler(this.TimeRegister_Tick);
             // 
+            // BtnExit
+            // 
+            this.BtnExit.BackColor = System.Drawing.Color.White;
+            this.BtnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BtnExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnExit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BtnExit.FlatAppearance.BorderSize = 0;
+            this.BtnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.BtnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnExit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnExit.ForeColor = System.Drawing.Color.Transparent;
+            this.BtnExit.Location = new System.Drawing.Point(875, 275);
+            this.BtnExit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.BtnExit.Name = "BtnExit";
+            this.BtnExit.Size = new System.Drawing.Size(80, 80);
+            this.BtnExit.TabIndex = 66;
+            this.BtnExit.UseVisualStyleBackColor = false;
+            this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MiniShopApp.Properties.Resources.Security;
+            this.pictureBox1.Location = new System.Drawing.Point(13, 13);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(240, 240);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 64;
+            this.pictureBox1.TabStop = false;
+            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(968, 404);
+            this.ControlBox = false;
             this.Controls.Add(this.BtnRegister);
             this.Controls.Add(this.LabRegister);
             this.Controls.Add(this.label3);
@@ -260,7 +260,7 @@ namespace MiniShopApp
             this.Controls.Add(this.BtnLogin);
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = " เข้าสู่ระบบ";
+            this.Text = "Login";
             this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.StatusStrip.ResumeLayout(false);
             this.StatusStrip.PerformLayout();

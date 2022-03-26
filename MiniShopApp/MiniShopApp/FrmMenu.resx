@@ -123,13 +123,31 @@
   <metadata name="LabEmpId.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="BtnLogout.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="BtnLogout.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        sQAAALEBxi1JjQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAIDSURBVEhLY4CB
+        /1e12f6f0DD+f1rTBRm/3aPu8Xynmiccb1MRhWohHvw/rW79/5TGEyD+j47f7Fb9/2ybChw/366yGqqN
+        OAB2OcTwq/9PagZQ3Qf/T2sZgl17Wt0fKkRd8P+0hgPEAg0HqBB1wYBZ8P9hU9z/B003316o/PD8VOnG
+        1+fKpKBSGOBzaKgoCEO5qACbBf8fNHoCDf8Pwm/OV/x/dqr0//PTpaf+///PCFWCAj4EB2x9E+T3/Kqv
+        rzZUCAGwW9C0HN0CMD5epglVggLeBwfsfxno9/+6t8frG34eelBhCMBhwVKsFhyr1IAqYfgUGCj8Idjf
+        BYSBFlwAWXDD2+P/DS+Plyg+wW4B4SACGroJiP/DMNwCdEuwWQAC/x82xgItuAGK5GcnSzegRzLQ0P04
+        LYBactvTUxSrBZ7b/rMzoEWoZd9jTigTDMi2wHnFDzWnpV9fAPFD56VfZ1rPeDjJZuq9PTZT7vy2mXZv
+        Cth0IAAaSl4QOS39cgBo+H8Ytp35+L/N1LsIPO2hC0gdWZHstvybLLLhWC2Yem8hVCscAC2AJdNXeJOp
+        y7LvNoQssJ167yBUKxwQndGcVvxQdlr67RNeC6bcmw3VCgefAwPFQEEG5aICZAugQtQFdLCA1hUOrMo8
+        rXkNWGUGUr3KBAGaVvow8P+MMSv1my0MDAD3hMHcjtk+cQAAAABJRU5ErkJggg==
+</value>
+  </data>
   <metadata name="BtnSettings.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="BtnReport.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="BtnReport.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAACMBJREFUeF7t

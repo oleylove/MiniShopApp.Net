@@ -32,6 +32,7 @@ namespace MiniShopApp
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenu));
             this.LabEmpName = new System.Windows.Forms.Label();
             this.LabEmpId = new System.Windows.Forms.Label();
+            this.BtnLogout = new System.Windows.Forms.Button();
             this.BtnSettings = new System.Windows.Forms.Button();
             this.BtnReport = new System.Windows.Forms.Button();
             this.BtnExit = new System.Windows.Forms.Button();
@@ -68,6 +69,27 @@ namespace MiniShopApp
             this.LabEmpId.TabIndex = 66;
             this.LabEmpId.Text = "id";
             this.LabEmpId.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // BtnLogout
+            // 
+            this.BtnLogout.BackColor = System.Drawing.Color.Transparent;
+            this.BtnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnLogout.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.BtnLogout.FlatAppearance.BorderSize = 0;
+            this.BtnLogout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BtnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLogout.Font = new System.Drawing.Font("Kanit", 9F);
+            this.BtnLogout.ForeColor = System.Drawing.Color.Red;
+            this.BtnLogout.Image = ((System.Drawing.Image)(resources.GetObject("BtnLogout.Image")));
+            this.BtnLogout.Location = new System.Drawing.Point(1134, 4);
+            this.BtnLogout.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.BtnLogout.Name = "BtnLogout";
+            this.BtnLogout.Size = new System.Drawing.Size(120, 50);
+            this.BtnLogout.TabIndex = 68;
+            this.BtnLogout.Text = "Logout";
+            this.BtnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnLogout.UseVisualStyleBackColor = false;
+            this.BtnLogout.Click += new System.EventHandler(this.BtnLogout_Click);
             // 
             // BtnSettings
             // 
@@ -262,6 +284,8 @@ namespace MiniShopApp
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1258, 544);
+            this.ControlBox = false;
+            this.Controls.Add(this.BtnLogout);
             this.Controls.Add(this.BtnSettings);
             this.Controls.Add(this.LabEmpId);
             this.Controls.Add(this.BtnReport);
@@ -275,6 +299,7 @@ namespace MiniShopApp
             this.Controls.Add(this.PtbEmp);
             this.Controls.Add(this.BtnSale);
             this.Name = "FrmMenu";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "เมนูหลัก";
             this.Load += new System.EventHandler(this.FrmMenu_Load);
@@ -298,5 +323,6 @@ namespace MiniShopApp
         private System.Windows.Forms.Button BtnSale;
         private System.Windows.Forms.Label LabEmpId;
         private System.Windows.Forms.Button BtnSettings;
+        private System.Windows.Forms.Button BtnLogout;
     }
 }

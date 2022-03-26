@@ -36,7 +36,6 @@ namespace MiniShopApp.FamSales
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.PtbEmp = new System.Windows.Forms.PictureBox();
             this.StatusStripSystem = new System.Windows.Forms.StatusStrip();
             this.TsslUserName = new System.Windows.Forms.ToolStripStatusLabel();
             this.TsstSystemName = new System.Windows.Forms.ToolStripStatusLabel();
@@ -53,29 +52,20 @@ namespace MiniShopApp.FamSales
             this.DtbEnd = new System.Windows.Forms.DateTimePicker();
             this.BtnSearch = new System.Windows.Forms.Button();
             this.BtnClear = new System.Windows.Forms.Button();
-            this.BtnMenu = new System.Windows.Forms.Button();
             this.DgvSaleDtl = new System.Windows.Forms.DataGridView();
             this.orderRows2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label4 = new System.Windows.Forms.Label();
             this.LabSaleAmount = new System.Windows.Forms.Label();
             this.TxtEmpId = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.PtbEmp)).BeginInit();
+            this.BtnLogout = new System.Windows.Forms.Button();
+            this.BtnMenu = new System.Windows.Forms.Button();
+            this.PtbEmp = new System.Windows.Forms.PictureBox();
             this.StatusStripSystem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvSale)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvSaleDtl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PtbEmp)).BeginInit();
             this.SuspendLayout();
-            // 
-            // PtbEmp
-            // 
-            this.PtbEmp.BackColor = System.Drawing.Color.White;
-            this.PtbEmp.Image = global::MiniShopApp.Properties.Resources.selectuser;
-            this.PtbEmp.Location = new System.Drawing.Point(12, 14);
-            this.PtbEmp.Name = "PtbEmp";
-            this.PtbEmp.Size = new System.Drawing.Size(97, 106);
-            this.PtbEmp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PtbEmp.TabIndex = 355;
-            this.PtbEmp.TabStop = false;
             // 
             // StatusStripSystem
             // 
@@ -274,24 +264,6 @@ namespace MiniShopApp.FamSales
             this.BtnClear.UseVisualStyleBackColor = false;
             this.BtnClear.Click += new System.EventHandler(this.BtnClear_Click);
             // 
-            // BtnMenu
-            // 
-            this.BtnMenu.BackColor = System.Drawing.Color.White;
-            this.BtnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnMenu.FlatAppearance.BorderColor = System.Drawing.SystemColors.Window;
-            this.BtnMenu.FlatAppearance.BorderSize = 0;
-            this.BtnMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
-            this.BtnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMenu.Font = new System.Drawing.Font("Kanit", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMenu.Image = global::MiniShopApp.Properties.Resources.Home;
-            this.BtnMenu.Location = new System.Drawing.Point(1763, 771);
-            this.BtnMenu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.BtnMenu.Name = "BtnMenu";
-            this.BtnMenu.Size = new System.Drawing.Size(135, 135);
-            this.BtnMenu.TabIndex = 364;
-            this.BtnMenu.UseVisualStyleBackColor = false;
-            this.BtnMenu.Click += new System.EventHandler(this.BtnMenu_Click);
-            // 
             // DgvSaleDtl
             // 
             this.DgvSaleDtl.AllowUserToAddRows = false;
@@ -387,6 +359,56 @@ namespace MiniShopApp.FamSales
             this.label5.TabIndex = 370;
             this.label5.Text = "หาจากรหัสพนักงาน";
             // 
+            // BtnLogout
+            // 
+            this.BtnLogout.BackColor = System.Drawing.Color.Transparent;
+            this.BtnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnLogout.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.BtnLogout.FlatAppearance.BorderSize = 0;
+            this.BtnLogout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BtnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLogout.Font = new System.Drawing.Font("Kanit Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLogout.ForeColor = System.Drawing.Color.Red;
+            this.BtnLogout.Image = global::MiniShopApp.Properties.Resources.check_out32;
+            this.BtnLogout.Location = new System.Drawing.Point(1750, 789);
+            this.BtnLogout.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.BtnLogout.Name = "BtnLogout";
+            this.BtnLogout.Size = new System.Drawing.Size(140, 110);
+            this.BtnLogout.TabIndex = 371;
+            this.BtnLogout.Text = "Logout";
+            this.BtnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnLogout.UseVisualStyleBackColor = false;
+            this.BtnLogout.Click += new System.EventHandler(this.BtnLogout_Click);
+            // 
+            // BtnMenu
+            // 
+            this.BtnMenu.BackColor = System.Drawing.Color.White;
+            this.BtnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnMenu.FlatAppearance.BorderColor = System.Drawing.SystemColors.Window;
+            this.BtnMenu.FlatAppearance.BorderSize = 0;
+            this.BtnMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
+            this.BtnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMenu.Font = new System.Drawing.Font("Kanit", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMenu.Image = global::MiniShopApp.Properties.Resources.Home;
+            this.BtnMenu.Location = new System.Drawing.Point(1750, 664);
+            this.BtnMenu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.BtnMenu.Name = "BtnMenu";
+            this.BtnMenu.Size = new System.Drawing.Size(140, 110);
+            this.BtnMenu.TabIndex = 364;
+            this.BtnMenu.UseVisualStyleBackColor = false;
+            this.BtnMenu.Click += new System.EventHandler(this.BtnMenu_Click);
+            // 
+            // PtbEmp
+            // 
+            this.PtbEmp.BackColor = System.Drawing.Color.White;
+            this.PtbEmp.Image = global::MiniShopApp.Properties.Resources.selectuser;
+            this.PtbEmp.Location = new System.Drawing.Point(12, 14);
+            this.PtbEmp.Name = "PtbEmp";
+            this.PtbEmp.Size = new System.Drawing.Size(97, 106);
+            this.PtbEmp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PtbEmp.TabIndex = 355;
+            this.PtbEmp.TabStop = false;
+            // 
             // FrmSalesDtl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -394,6 +416,7 @@ namespace MiniShopApp.FamSales
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1898, 968);
             this.ControlBox = false;
+            this.Controls.Add(this.BtnLogout);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.TxtEmpId);
             this.Controls.Add(this.LabSaleAmount);
@@ -415,11 +438,11 @@ namespace MiniShopApp.FamSales
             this.Text = " ข้อมูลการขาย";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmSalesDtl_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.PtbEmp)).EndInit();
             this.StatusStripSystem.ResumeLayout(false);
             this.StatusStripSystem.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvSale)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvSaleDtl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PtbEmp)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -451,5 +474,6 @@ namespace MiniShopApp.FamSales
         private System.Windows.Forms.Label LabSaleAmount;
         private System.Windows.Forms.TextBox TxtEmpId;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button BtnLogout;
     }
 }

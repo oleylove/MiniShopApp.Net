@@ -15,17 +15,31 @@ namespace MiniShopApp
     public partial class FrmMenu : Form
     {
         public string _EmpId;
-        public string _PathPhoto = ConfigurationManager.AppSettings["PathImagesEmp"];
+        //public string _PathPhoto = ConfigurationManager.AppSettings["PathImagesEmp"];
+        public Config SysConfig = new Config();
+        public static FrmMenu This = null;
 
         public FrmMenu(string _EmpId)
         {
             InitializeComponent();
             this._EmpId = _EmpId;
+
+            SysConfig = new Config();
+            This = this;
+            Config deserSetting = SysConfig.DeserializeFromXML();
+            if (deserSetting != null)
+            {
+                SysConfig = deserSetting;
+            }
         }
 
         private void FrmMenu_Load(object sender, EventArgs e)
         {
-            _ = new CreateLogFile("EmployeeID:" + '"' + _EmpId + '"' + " Open form main menu");
+            // Get the bitmap.
+            Bitmap bm = new Bitmap(Properties.Resources.menu_icon64);
+            // Convert to an icon and use for the form's icon.
+            this.Icon = Icon.FromHandle(bm.GetHicon());
+
             using (var db = new MiniShopContext())
             {
                 try
@@ -35,6 +49,14 @@ namespace MiniShopApp
                     {
                         LabEmpName.Text = "ผู้ใช้ : " + employee.EmpTitle.ToString() + employee.EmpName.ToString();
                         LabEmpId.Text = employee.EmpId.ToString();
+                        if (employee.EmpRole.ToString() == "เจ้าของร้าน")
+                        {
+                            BtnSettings.Visible = true;
+                        }else
+                        {
+                            BtnSettings.Visible = false;
+                        }
+
                         switch (employee.EmpPhoto)
                         {
                             case null:
@@ -46,9 +68,9 @@ namespace MiniShopApp
                                 PtbEmp.SizeMode = PictureBoxSizeMode.StretchImage;
                                 break;
                             default:
-                                if (File.Exists(_PathPhoto + employee.EmpPhoto))
+                                if (File.Exists(SysConfig.PathImagesEmployee + employee.EmpPhoto))
                                 {
-                                    using (FileStream stream = new FileStream(_PathPhoto + employee.EmpPhoto,
+                                    using (FileStream stream = new FileStream(SysConfig.PathImagesEmployee + employee.EmpPhoto,
                                         FileMode.Open,
                                         FileAccess.Read,
                                         FileShare.Delete))
@@ -88,7 +110,6 @@ namespace MiniShopApp
             FrmSale frm = new FrmSale(_EmpId);
             this.Close();
             frm.Show();
-            _ = new CreateLogFile("EmployeeID:" + '"' + _EmpId + '"' + " Open form sale");
         }
 
         private void BtnStockMenu_Click(object sender, EventArgs e)
@@ -98,7 +119,6 @@ namespace MiniShopApp
             {
                 f.Close();
             }
-            _ = new CreateLogFile("EmployeeID:" + '"' + _EmpId + '"' + " Open form stock");
             FrmProduct frm = new FrmProduct(_EmpId);
             this.Close();
             frm.Show();
@@ -111,7 +131,6 @@ namespace MiniShopApp
             {
                 f.Close();
             }
-            _ = new CreateLogFile("EmployeeID:" + '"' + _EmpId + '"' + " Open form sata employee");
             FrmEmployee frm = new FrmEmployee(_EmpId);
             this.Close();
             frm.Show();
@@ -124,7 +143,6 @@ namespace MiniShopApp
             {
                 f.Close();
             }
-            _ = new CreateLogFile("EmployeeID:" + '"' + _EmpId + '"' + " Open form employee menu");
             FrmEmpCRUD frm = new FrmEmpCRUD(_EmpId, "", "ShowEmployee");
             frm.Show();
         }
@@ -147,7 +165,6 @@ namespace MiniShopApp
             {
                 f.Close();
             }
-            _ = new CreateLogFile("EmployeeID:" + '"' + _EmpId + '"' + " Open form sale detail");
             FrmSalesDtl frm = new FrmSalesDtl(_EmpId);
             this.Close();
             frm.Show();
@@ -161,12 +178,30 @@ namespace MiniShopApp
             {
                 f.Close();
             }
-            _ = new CreateLogFile("EmployeeID:" + '"' + _EmpId + '"' + " Open form sale detail");
-            FrmReport frm = new FrmReport();
+            FrmReport frm = new FrmReport(_EmpId);
             this.Close();
             frm.Show();
 
         }
+
+        private void BtnSettings_Click(object sender, EventArgs e)
+        {
+            Form f = Application.OpenForms["FrmSettings"];
+            if (((FrmSettings)f) != null)
+            {
+                f.Close();
+            }
+            FrmSettings frm = new FrmSettings();
+            frm.Show();
+        }
+
+        private void BtnLogout_Click(object sender, EventArgs e)
+        {
+            FrmLogin frm = new FrmLogin();
+            this.Close();
+            frm.Show();
+        }
+
 
         private void BtnExit_Click(object sender, EventArgs e)
         {
@@ -175,7 +210,7 @@ namespace MiniShopApp
                 DialogResult result = MessageBox.Show("คุณต้องการจะปิดโปรแกรมหรือไม่ ?", "ปิดโปรแกรม", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)
                 {
-                    _ = new CreateLogFile("EmployeeID:" + '"' + _EmpId + '"' + " Exit Application");
+                    new CreateLogFile("EmployeeID:" + '"' + _EmpId + '"' + " Exit Application");
                     this.Close();
                     Application.Exit();
                 }
@@ -186,10 +221,5 @@ namespace MiniShopApp
             }
         }
 
-        private void BtnSettings_Click(object sender, EventArgs e)
-        {
-            FrmSettings frm = new FrmSettings();
-            frm.Show();
-        }
     }
 }

@@ -30,9 +30,9 @@ namespace MiniShopApp.FrmProducts
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.TsstDate = new System.Windows.Forms.ToolStripStatusLabel();
             this.TsslUserName = new System.Windows.Forms.ToolStripStatusLabel();
             this.TimerCurrent = new System.Windows.Forms.Timer(this.components);
@@ -62,6 +62,7 @@ namespace MiniShopApp.FrmProducts
             this.PtbEmp = new System.Windows.Forms.PictureBox();
             this.BtnMenu = new System.Windows.Forms.Button();
             this.PtbProduct = new System.Windows.Forms.PictureBox();
+            this.BtnLogout = new System.Windows.Forms.Button();
             this.StatusStripSystem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvProducts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PtbEmp)).BeginInit();
@@ -348,35 +349,35 @@ namespace MiniShopApp.FrmProducts
             this.DgvProducts.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.DgvProducts.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.DgvProducts.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Kanit Medium", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.DgvProducts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.DgvProducts.ColumnHeadersHeight = 34;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Kanit Medium", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.DgvProducts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.DgvProducts.ColumnHeadersHeight = 30;
             this.DgvProducts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.orderRows});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Kanit", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DgvProducts.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Kanit", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgvProducts.DefaultCellStyle = dataGridViewCellStyle5;
             this.DgvProducts.Location = new System.Drawing.Point(18, 137);
             this.DgvProducts.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.DgvProducts.Name = "DgvProducts";
             this.DgvProducts.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Kanit", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.DgvProducts.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Kanit", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.DgvProducts.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.DgvProducts.RowHeadersVisible = false;
             this.DgvProducts.RowHeadersWidth = 62;
             this.DgvProducts.RowTemplate.Height = 30;
@@ -406,10 +407,10 @@ namespace MiniShopApp.FrmProducts
             this.BtnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnMenu.Font = new System.Drawing.Font("Kanit", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnMenu.Image = global::MiniShopApp.Properties.Resources.Home;
-            this.BtnMenu.Location = new System.Drawing.Point(1763, 746);
+            this.BtnMenu.Location = new System.Drawing.Point(1745, 646);
             this.BtnMenu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnMenu.Name = "BtnMenu";
-            this.BtnMenu.Size = new System.Drawing.Size(135, 135);
+            this.BtnMenu.Size = new System.Drawing.Size(140, 110);
             this.BtnMenu.TabIndex = 6;
             this.BtnMenu.UseVisualStyleBackColor = false;
             this.BtnMenu.Click += new System.EventHandler(this.BtnMenu_Click);
@@ -425,6 +426,27 @@ namespace MiniShopApp.FrmProducts
             this.PtbProduct.TabIndex = 155;
             this.PtbProduct.TabStop = false;
             // 
+            // BtnLogout
+            // 
+            this.BtnLogout.BackColor = System.Drawing.Color.Transparent;
+            this.BtnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnLogout.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.BtnLogout.FlatAppearance.BorderSize = 0;
+            this.BtnLogout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BtnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLogout.Font = new System.Drawing.Font("Kanit Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLogout.ForeColor = System.Drawing.Color.Red;
+            this.BtnLogout.Image = global::MiniShopApp.Properties.Resources.check_out32;
+            this.BtnLogout.Location = new System.Drawing.Point(1745, 771);
+            this.BtnLogout.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.BtnLogout.Name = "BtnLogout";
+            this.BtnLogout.Size = new System.Drawing.Size(140, 110);
+            this.BtnLogout.TabIndex = 373;
+            this.BtnLogout.Text = "Logout";
+            this.BtnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnLogout.UseVisualStyleBackColor = false;
+            this.BtnLogout.Click += new System.EventHandler(this.BtnLogout_Click);
+            // 
             // FrmProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -432,6 +454,7 @@ namespace MiniShopApp.FrmProducts
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1898, 968);
             this.ControlBox = false;
+            this.Controls.Add(this.BtnLogout);
             this.Controls.Add(this.PtbEmp);
             this.Controls.Add(this.BtnAddStock);
             this.Controls.Add(this.BtnAddProduct);
@@ -500,5 +523,6 @@ namespace MiniShopApp.FrmProducts
         private System.Windows.Forms.DataGridView DgvProducts;
         private System.Windows.Forms.PictureBox PtbEmp;
         public System.Windows.Forms.PictureBox PtbProduct;
+        private System.Windows.Forms.Button BtnLogout;
     }
 }

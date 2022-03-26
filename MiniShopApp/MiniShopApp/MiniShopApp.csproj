@@ -547,6 +547,24 @@
   <ItemGroup>
     <None Include="Resources\settings.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-out32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check_in64.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_icon64.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply24.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.1.1.0\build\net46\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.1.1.0\build\net46\Microsoft.Data.SqlClient.SNI.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

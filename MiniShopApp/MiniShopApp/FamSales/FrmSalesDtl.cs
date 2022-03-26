@@ -15,12 +15,22 @@ namespace MiniShopApp.FamSales
     public partial class FrmSalesDtl : Form
     {
         public string _EmpId;
-        public string _PathImagesEmp = ConfigurationManager.AppSettings["PathImagesEmp"];
+        //public string _PathImagesEmp = ConfigurationManager.AppSettings["PathImagesEmp"];
+        public Config SysConfig = new Config();
+        public static FrmSalesDtl This = null;
 
         public FrmSalesDtl(string _EmpId)
         {
             InitializeComponent();
             this._EmpId = _EmpId;
+
+            SysConfig = new Config();
+            This = this;
+            Config deserSetting = SysConfig.DeserializeFromXML();
+            if (deserSetting != null)
+            {
+                SysConfig = deserSetting;
+            }
         }
 
         private void FrmSalesDtl_Load(object sender, EventArgs e)
@@ -31,7 +41,7 @@ namespace MiniShopApp.FamSales
                 {
                     Thread.CurrentThread.CurrentCulture = new CultureInfo("th-TH");
                     TsstDate.Text = DateTime.Today.ToString("dd MMMM yyyy");
-
+                    TsstSystemName.Text = SysConfig.ShopName;
                     var employee = db.Employees.FirstOrDefault(emp => emp.EmpId.Equals(_EmpId));
                     if (employee != null)
                     {
@@ -57,9 +67,9 @@ namespace MiniShopApp.FamSales
                                 PtbEmp.SizeMode = PictureBoxSizeMode.StretchImage;
                                 break;
                             default:
-                                if (File.Exists(_PathImagesEmp + employee.EmpPhoto))
+                                if (File.Exists(SysConfig.PathImagesEmployee + employee.EmpPhoto))
                                 {
-                                    using (FileStream stream = new FileStream(_PathImagesEmp + employee.EmpPhoto,
+                                    using (FileStream stream = new FileStream(SysConfig.PathImagesEmployee + employee.EmpPhoto,
                                             FileMode.Open,
                                             FileAccess.Read,
                                             FileShare.Delete))
@@ -323,6 +333,13 @@ namespace MiniShopApp.FamSales
             _ = new CreateLogFile("EmployeeID:" + '"' + _EmpId + '"' +
                 " Date End Value Changed:" + '"' + DtpBegin.Value.ToString() + '"');
 
+        }
+
+        private void BtnLogout_Click(object sender, EventArgs e)
+        {
+            FrmLogin frm = new FrmLogin();
+            this.Close();
+            frm.Show();
         }
     }
 }

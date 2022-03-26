@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <ShopName>OLEYLOVE</ShopName>
+  <ShopName>MiniShop By Yukinoshita</ShopName>
   <ShopPhone>088-328-8235</ShopPhone>
   <PathLogFile>D:\MiniShopApp\Log\</PathLogFile>
   <PathImagesEmployee>D:\MiniShopApp\EmployeeImages\</PathImagesEmployee>

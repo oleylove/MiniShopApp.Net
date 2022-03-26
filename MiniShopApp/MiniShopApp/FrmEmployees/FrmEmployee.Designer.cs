@@ -61,6 +61,7 @@ namespace MiniShopApp.FrmEmployees
             this.label3 = new System.Windows.Forms.Label();
             this.DgvEmployee = new System.Windows.Forms.DataGridView();
             this.PtbEmployee = new System.Windows.Forms.PictureBox();
+            this.BtnLogout = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PtbEmp)).BeginInit();
             this.StatusStripSystem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvEmployee)).BeginInit();
@@ -163,10 +164,10 @@ namespace MiniShopApp.FrmEmployees
             this.BtnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnMenu.Font = new System.Drawing.Font("Kanit", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnMenu.Image = global::MiniShopApp.Properties.Resources.Home;
-            this.BtnMenu.Location = new System.Drawing.Point(1763, 746);
+            this.BtnMenu.Location = new System.Drawing.Point(1745, 646);
             this.BtnMenu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnMenu.Name = "BtnMenu";
-            this.BtnMenu.Size = new System.Drawing.Size(135, 135);
+            this.BtnMenu.Size = new System.Drawing.Size(140, 110);
             this.BtnMenu.TabIndex = 6;
             this.BtnMenu.UseVisualStyleBackColor = false;
             this.BtnMenu.Click += new System.EventHandler(this.BtnMenu_Click);
@@ -401,6 +402,26 @@ namespace MiniShopApp.FrmEmployees
             this.PtbEmployee.TabIndex = 343;
             this.PtbEmployee.TabStop = false;
             // 
+            // BtnLogout
+            // 
+            this.BtnLogout.BackColor = System.Drawing.Color.Transparent;
+            this.BtnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnLogout.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.BtnLogout.FlatAppearance.BorderSize = 0;
+            this.BtnLogout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BtnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLogout.Font = new System.Drawing.Font("Kanit Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLogout.ForeColor = System.Drawing.Color.Red;
+            this.BtnLogout.Image = global::MiniShopApp.Properties.Resources.check_out32;
+            this.BtnLogout.Location = new System.Drawing.Point(1745, 771);
+            this.BtnLogout.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.BtnLogout.Name = "BtnLogout";
+            this.BtnLogout.Size = new System.Drawing.Size(140, 110);
+            this.BtnLogout.TabIndex = 372;
+            this.BtnLogout.Text = "Logout";
+            this.BtnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnLogout.UseVisualStyleBackColor = false;
+            // 
             // FrmEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -408,6 +429,7 @@ namespace MiniShopApp.FrmEmployees
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1898, 968);
             this.ControlBox = false;
+            this.Controls.Add(this.BtnLogout);
             this.Controls.Add(this.PtbEmp);
             this.Controls.Add(this.BtnAddEmp);
             this.Controls.Add(this.BtnEditEmployee);
@@ -474,5 +496,6 @@ namespace MiniShopApp.FrmEmployees
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView DgvEmployee;
         public System.Windows.Forms.PictureBox PtbEmployee;
+        private System.Windows.Forms.Button BtnLogout;
     }
 }

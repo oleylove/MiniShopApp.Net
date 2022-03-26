@@ -35,6 +35,7 @@ namespace MiniShopApp.FrmReports
             this.label1 = new System.Windows.Forms.Label();
             this.CboSelectYear = new System.Windows.Forms.ComboBox();
             this.ChartSaleMonth = new LiveCharts.WinForms.CartesianChart();
+            this.BtnClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label3
@@ -70,7 +71,7 @@ namespace MiniShopApp.FrmReports
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Kanit", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1571, 47);
+            this.label1.Location = new System.Drawing.Point(1305, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 44);
             this.label1.TabIndex = 4;
@@ -80,7 +81,7 @@ namespace MiniShopApp.FrmReports
             // 
             this.CboSelectYear.Font = new System.Drawing.Font("Kanit", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CboSelectYear.FormattingEnabled = true;
-            this.CboSelectYear.Location = new System.Drawing.Point(1684, 44);
+            this.CboSelectYear.Location = new System.Drawing.Point(1418, 44);
             this.CboSelectYear.Name = "CboSelectYear";
             this.CboSelectYear.Size = new System.Drawing.Size(179, 46);
             this.CboSelectYear.TabIndex = 5;
@@ -95,11 +96,32 @@ namespace MiniShopApp.FrmReports
             this.ChartSaleMonth.TabIndex = 6;
             this.ChartSaleMonth.Text = "ChartSaleMonth";
             // 
+            // BtnClose
+            // 
+            this.BtnClose.BackColor = System.Drawing.Color.Transparent;
+            this.BtnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnClose.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.BtnClose.FlatAppearance.BorderSize = 0;
+            this.BtnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BtnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnClose.Font = new System.Drawing.Font("Kanit Medium", 12F, System.Drawing.FontStyle.Bold);
+            this.BtnClose.ForeColor = System.Drawing.Color.Red;
+            this.BtnClose.Location = new System.Drawing.Point(1790, 5);
+            this.BtnClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.BtnClose.Name = "BtnClose";
+            this.BtnClose.Size = new System.Drawing.Size(100, 60);
+            this.BtnClose.TabIndex = 156;
+            this.BtnClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnClose.UseVisualStyleBackColor = false;
+            this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
+            // 
             // FrmReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1898, 968);
+            this.ControlBox = false;
+            this.Controls.Add(this.BtnClose);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.ChartSaleYear);
@@ -122,7 +144,8 @@ namespace MiniShopApp.FrmReports
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox CboSelectYear;
-        private LiveCharts.WinForms.CartesianChart ChartSaleYear;
-        private LiveCharts.WinForms.CartesianChart ChartSaleMonth;
+        private System.Windows.Forms.Button BtnClose;
+        public LiveCharts.WinForms.CartesianChart ChartSaleYear;
+        public LiveCharts.WinForms.CartesianChart ChartSaleMonth;
     }
 }

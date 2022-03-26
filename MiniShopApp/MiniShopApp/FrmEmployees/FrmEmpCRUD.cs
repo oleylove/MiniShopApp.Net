@@ -21,7 +21,10 @@ namespace MiniShopApp.FrmEmployees
         public string _EditEmpId;
         public string _ActionsFrm;
         public bool _SelectPic = false;
-        public string _PathImagesEmp = ConfigurationManager.AppSettings["PathImagesEmp"];
+        //public string _PathImagesEmp = ConfigurationManager.AppSettings["PathImagesEmp"];
+
+        public Config SysConfig = new Config();
+        public static FrmEmpCRUD This = null;
 
         public FrmEmpCRUD(string _EmpId, string _EditEmpId, string _ActionsFrm)
         {
@@ -29,6 +32,15 @@ namespace MiniShopApp.FrmEmployees
             this._EmpId = _EmpId;
             this._EditEmpId = _EditEmpId;
             this._ActionsFrm = _ActionsFrm;
+
+            SysConfig = new Config();
+            This = this;
+            Config deserSetting = SysConfig.DeserializeFromXML();
+            if (deserSetting != null)
+            {
+                SysConfig = deserSetting;
+            }
+
         }
         private void FrmEmpCRUD_Load(object sender, EventArgs e)
         {
@@ -110,9 +122,9 @@ namespace MiniShopApp.FrmEmployees
                             PtbEmpPhoto.SizeMode = PictureBoxSizeMode.StretchImage;
                             break;
                         default:
-                            if (File.Exists(_PathImagesEmp + emp.EmpPhoto))
+                            if (File.Exists(SysConfig.PathImagesEmployee + emp.EmpPhoto))
                             {
-                                using (FileStream stream = new FileStream(_PathImagesEmp + emp.EmpPhoto,
+                                using (FileStream stream = new FileStream(SysConfig.PathImagesEmployee + emp.EmpPhoto,
                                         FileMode.Open,
                                         FileAccess.Read,
                                         FileShare.Delete))
@@ -195,13 +207,13 @@ namespace MiniShopApp.FrmEmployees
                                     string _ProPhoto = "";
                                     if (_SelectPic == true)
                                     {
-                                        if (!File.Exists(_PathImagesEmp))
+                                        if (!File.Exists(SysConfig.PathImagesEmployee))
                                         {
-                                            Directory.CreateDirectory(_PathImagesEmp);
+                                            Directory.CreateDirectory(SysConfig.PathImagesEmployee);
                                         }
                                         GC.Collect();
                                         GC.WaitForPendingFinalizers();
-                                        File.Copy(OpenFileDialog.FileName, _PathImagesEmp + TxtEmpId.Text + Path.GetExtension(OpenFileDialog.FileName), true);
+                                        File.Copy(OpenFileDialog.FileName, SysConfig.PathImagesEmployee + TxtEmpId.Text + Path.GetExtension(OpenFileDialog.FileName), true);
                                         _ProPhoto = TxtEmpId.Text + Path.GetExtension(OpenFileDialog.FileName);
                                         _SelectPic = false;
                                     }
@@ -267,14 +279,14 @@ namespace MiniShopApp.FrmEmployees
                                 string _EmpPhoto = "";
                                 if (_SelectPic == true)
                                 {
-                                    if (!File.Exists(_PathImagesEmp))
+                                    if (!File.Exists(SysConfig.PathImagesEmployee))
                                     {
-                                        Directory.CreateDirectory(_PathImagesEmp);
+                                        Directory.CreateDirectory(SysConfig.PathImagesEmployee);
                                     }
                                     string EmpPhotoName = TxtEmpId.Text + Path.GetExtension(OpenFileDialog.FileName);
                                     GC.Collect();
                                     GC.WaitForPendingFinalizers();
-                                    File.Copy(Path.Combine(OpenFileDialog.FileName), Path.Combine(_PathImagesEmp + EmpPhotoName), true);
+                                    File.Copy(Path.Combine(OpenFileDialog.FileName), Path.Combine(SysConfig.PathImagesEmployee + EmpPhotoName), true);
                                     _EmpPhoto = EmpPhotoName;
                                 }
 

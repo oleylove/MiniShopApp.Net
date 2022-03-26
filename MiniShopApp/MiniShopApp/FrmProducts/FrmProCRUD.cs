@@ -19,7 +19,10 @@ namespace MiniShopApp.FrmProducts
         public string _ProID;
         public string _ActionsFrm;
         public bool _SelectPic = false;
-        public string _PathImagesPro = ConfigurationManager.AppSettings["PathImagesPro"];
+        //public string _PathImagesPro = ConfigurationManager.AppSettings["PathImagesPro"];
+
+        public Config SysConfig = new Config();
+        public static FrmProCRUD This = null;
 
         public FrmProCRUD(string _EmpId, string _ProID ,string _ActionsFrm)
         {
@@ -27,6 +30,15 @@ namespace MiniShopApp.FrmProducts
             this._EmpId = _EmpId;
             this._ProID = _ProID;
             this._ActionsFrm = _ActionsFrm;
+
+            SysConfig = new Config();
+            This = this;
+            Config deserSetting = SysConfig.DeserializeFromXML();
+            if (deserSetting != null)
+            {
+                SysConfig = deserSetting;
+            }
+
         }
 
         private void FrmProCRUD_Load(object sender, EventArgs e)
@@ -129,9 +141,9 @@ namespace MiniShopApp.FrmProducts
                                 PtbProduct.SizeMode = PictureBoxSizeMode.StretchImage;
                                 break;
                             default:
-                                if (File.Exists(_PathImagesPro + pro[0].ProPhoto.ToString()))
+                                if (File.Exists(SysConfig.PathImagesProduct + pro[0].ProPhoto.ToString()))
                                 {
-                                    PtbProduct.Image = Image.FromFile(_PathImagesPro + pro[0].ProPhoto.ToString());
+                                    PtbProduct.Image = Image.FromFile(SysConfig.PathImagesProduct + pro[0].ProPhoto.ToString());
                                     PtbProduct.SizeMode = PictureBoxSizeMode.StretchImage;
                                 }
                                 else
@@ -275,14 +287,14 @@ namespace MiniShopApp.FrmProducts
                                 }
                                 if (_SelectPic == true)
                                 {
-                                    if (!File.Exists(_PathImagesPro))
+                                    if (!File.Exists(SysConfig.PathImagesProduct))
                                     {
-                                        Directory.CreateDirectory(_PathImagesPro);
+                                        Directory.CreateDirectory(SysConfig.PathImagesProduct);
                                     }
                                     string ProPhotoName = TxtProID.Text + Path.GetExtension(OpenFileDialog.FileName);
                                     GC.Collect();
                                     GC.WaitForPendingFinalizers();
-                                    File.Copy(Path.Combine(OpenFileDialog.FileName), Path.Combine(_PathImagesPro + ProPhotoName), true) ;
+                                    File.Copy(Path.Combine(OpenFileDialog.FileName), Path.Combine(SysConfig.PathImagesProduct + ProPhotoName), true) ;
                                     pro.ProPhoto = ProPhotoName;
                                 }
                                 string _ProStateEdit = null;
@@ -360,12 +372,12 @@ namespace MiniShopApp.FrmProducts
                                 }
                                 if (_SelectPic == true)
                                 {
-                                    if (!File.Exists(_PathImagesPro))
+                                    if (!File.Exists(SysConfig.PathImagesProduct))
                                     {
-                                        Directory.CreateDirectory(_PathImagesPro);
+                                        Directory.CreateDirectory(SysConfig.PathImagesProduct);
                                     }
 
-                                    File.Copy(OpenFileDialog.FileName, _PathImagesPro + TxtProID.Text + Path.GetExtension(OpenFileDialog.FileName), true);
+                                    File.Copy(OpenFileDialog.FileName, SysConfig.PathImagesProduct + TxtProID.Text + Path.GetExtension(OpenFileDialog.FileName), true);
                                     _ProPhoto = TxtProID.Text + Path.GetExtension(OpenFileDialog.FileName);
                                     _SelectPic = false;
                                 }

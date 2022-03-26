@@ -19,9 +19,9 @@ namespace MiniShopApp
         public FrmSettings()
         {
             InitializeComponent();
+
             SysConfig = new Config();
             This = this;
-
             Config deserSetting = SysConfig.DeserializeFromXML();
             if (deserSetting != null)
             {
@@ -39,6 +39,11 @@ namespace MiniShopApp
             SysConfig.SerailizeToXml();
             pgConfig.Refresh();
 
+        }
+
+        private void BtnApply_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
