@@ -60,6 +60,14 @@ namespace MiniShopApp
         }
 
 
+        private string _myConnection= @"Data Source=.\SQLEXPRESS;Initial Catalog=MiniShop;Integrated Security=True; Timeout=30";
+        [Category("Connection")]
+        public string MyConnection
+        {
+            get { return _myConnection; }
+            set { _myConnection = value; }
+        }
+
         public void SerailizeToXml()
         {
             XmlSerializer serializer = new XmlSerializer(typeof(Config));

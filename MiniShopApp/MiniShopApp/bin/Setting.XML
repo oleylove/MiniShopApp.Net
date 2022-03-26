@@ -6,4 +6,5 @@
   <PathImagesEmployee>D:\MiniShopApp\EmployeeImages\</PathImagesEmployee>
   <PathImagesProduct>D:\MiniShopApp\ProductImages\</PathImagesProduct>
   <PathBackupDB>D:\MiniShopApp\Database\</PathBackupDB>
+  <MyConnection>Data Source=.\SQLEXPRESS;Initial Catalog=minishop;Integrated Security=True; Timeout=30</MyConnection>
 </Config>

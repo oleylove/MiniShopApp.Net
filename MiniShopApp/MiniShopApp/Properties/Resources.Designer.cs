@@ -93,6 +93,16 @@ namespace MiniShopApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap backup_db32 {
+            get {
+                object obj = ResourceManager.GetObject("backup_db32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cancel {
             get {
                 object obj = ResourceManager.GetObject("cancel", resourceCulture);
@@ -176,6 +186,16 @@ namespace MiniShopApp.Properties {
         internal static System.Drawing.Bitmap menu_icon64 {
             get {
                 object obj = ResourceManager.GetObject("menu_icon64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap restore_db32 {
+            get {
+                object obj = ResourceManager.GetObject("restore_db32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
